@@ -1,0 +1,38 @@
+/* Bannière */
+
+.bannerBase {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    margin: 20px;
+    border-radius: 9px;
+    height: 223px;
+}
+
+.bannerPicture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerPicture img{
+    object-fit: cover;
+    width: 100%;
+}
+  
+.bannerBlur {
+    position: absolute;
+    border-radius: 9px;
+    background-color: #FFF;
+    height: 100%;
+    width: 100%;
+    opacity: 0.25;
+}
+
+.bannerTitle{
+    position: absolute;
+    font-size: 48px;
+    color: #FFF;
+}
