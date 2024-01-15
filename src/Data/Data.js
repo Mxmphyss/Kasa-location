@@ -617,3 +617,5 @@
 		]
 	}
 ]
+
+export default ficheLogement

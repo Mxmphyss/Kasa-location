@@ -1,13 +1,13 @@
 import "./styles/Banner.css";
-import imgBanner from "./assets/imgBanniere.png";
+import ImgBanner from "./assets/imgBanniere.png";
 import logo1 from "./assets/LOGO.png";
 
 function Banner (){
     return (
         <div>
             <div className="bannerBase">
-                <div className="bannerPicture">
-                    <img url={imgBanner} alt="image de bannière"/>
+                <div>
+                    <img url={ImgBanner} alt="image de bannière"/>
                 </div>
                 <div className="bannerBlur">
                 </div>
