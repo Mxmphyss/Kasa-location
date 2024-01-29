@@ -1,0 +1,26 @@
+/* Erreur style */
+
+.ErrorStyle{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6060;
+}
+
+.ErrorStyle h1{
+    font-size: 230px;
+    font-weight: 600;
+}
+
+.ErrorStyle p{
+    font-size: 30px;
+    margin: 70px 0;
+}
+
+.ErrorStyle a{
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+}

@@ -5,23 +5,21 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px;
-    padding: 20px;
+    padding: 10px 50px;
 }
 
 .nav2 {
-    width: 10%;
     display: flex;
     justify-content: space-between;
     margin: 0 10px;
 }
 
 .nav2 a {
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
-    color: red;
+    margin: 5px 20px;
 }
 
-.nav2 span {
-    text-decoration: underline;
+.nav2 {
+    margin-right: 0;
 }
-
