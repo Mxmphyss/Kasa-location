@@ -1,14 +1,14 @@
-import dataLocation from "../Data/Data.json"
+import { Link } from "react-router-dom";
+import "./styles/Card.css"
 
-function Card (){
-    console.log(dataLocation.map)
+function Card ( {logement} ){
     return (
-        dataLocation.map((data) => {
             <div className="Card">
-                <img src={data.cover} alt={data.title} />
-                <h2>{data.title}</h2>
+                <Link to={`/logement/${logement.id}`}>
+                    <img src={logement.cover} alt={logement.title} />
+                    <h2>{logement.title}</h2>
+                </Link>
             </div>
-        })
     )
 
 }

@@ -1,7 +1,7 @@
 /* Collapse */
 
 .mainCollapse{
-    width: 50%;
+    width: 80%;
     height: 100%;
     border-radius: 10px;
     margin: 20px 0;
@@ -30,9 +30,45 @@
     background-color: #FF6060;
 }
 
+.container-1.onWork-1 {
+    border-radius: 10px 10px 0 0;
+}
+
 .container-2{
+    display: none;
     width: 100%;
-    background-color: #D4DD;
+    background-color: #F6F6F6;
     padding: 5px 15px;
     border-radius: 0 0 10px 10px;
+}
+
+.container-2.onWork-2 {
+    transition: 5s linear;
+    display: block;
+}
+
+.button i {
+    transform: rotate(180deg);
+}
+
+@keyframes down-to-up {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+}
+
+.buttonSpin.spin {
+    animation: down-to-up forwards;
+}
+
+.buttonSpin {
+    background-color: transparent;
+}
+
+.buttonSpin i{
+    font-size: 20px;
+    color: #F0F0F0;
 }

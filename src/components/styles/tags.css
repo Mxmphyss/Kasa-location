@@ -1,0 +1,13 @@
+/* Les filtres */
+
+.tags {
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6060;
+    color: #f0f0f0;
+}

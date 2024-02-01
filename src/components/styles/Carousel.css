@@ -1,0 +1,21 @@
+/* Carousel de Logement */
+
+.carrousel {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+.arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: aquamarine;
+}

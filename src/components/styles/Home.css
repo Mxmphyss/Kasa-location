@@ -1,8 +1,11 @@
 /* section Logement */
 
 .sectionLogement {
-    margin: 20px 60px;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 30px;
     background-color:#F6F6F6;
     border-radius: 9px;
 }
