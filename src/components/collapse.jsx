@@ -1,9 +1,14 @@
 import "./styles/Collapse.css";
 import { useState } from "react";
+import logements from '../Data/Data.json';
+import { useParams } from "react-router-dom";
 
-function Collapse ({ title, container }){
+function Collapse ({ title, style, container }){
 
-    const [click, setClick] = useState(0)
+    const [click, setClick] = useState(0);
+
+    const { id } = useParams();
+    const logement = logements.find(logement => logement.id === id);
 
     const add = () => {
 
@@ -18,7 +23,19 @@ function Collapse ({ title, container }){
         } else {
             setClick(click == 0)
         }
-    }
+    };
+
+    /* 
+
+    Ce code ne fonctionne pas. Il m'affiche "Logement.map is not a function". Je ne peux pas viser directement les tags de l'id
+    de la page en question
+    
+    {logement.forEach(function () {
+            <p>{ container }</p>
+        })
+    };
+    
+    */
 
     return (
         <div className="mainCollapse">
@@ -28,8 +45,8 @@ function Collapse ({ title, container }){
                     <i class="fa-solid fa-chevron-up"></i>
                 </button>
             </div>
-            <div className={ click == 0 ? "container-2" : "container-2 onWork-2" }>
-                <p>{ container }</p>
+            <div style={style} className={ click == 0 ? "container-2" : "container-2 onWork-2" }>
+
             </div>
         </div>
     )

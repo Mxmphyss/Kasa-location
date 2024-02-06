@@ -19,3 +19,13 @@
     width: 100%;
     background-color: aquamarine;
 }
+
+.arrow_left {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.arrow_right {
+    z-index: 1;
+    cursor: pointer;
+}

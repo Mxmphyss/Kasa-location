@@ -1,42 +1,52 @@
 import "./styles/Carousel.css";
 import logements from '../Data/Data.json';
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 function Carrousel (){
 
-    const [slider, setSlider] = useState(0)
+    const [sliderIndex, setSliderIndex] = useState(0);
 
-    /* nombre d'image à affciher */
+    /* id de la page */
 
-    const count = logements.pictures
+    const { id } = useParams();
+    const logement = logements.find(logement => logement.id === id);
 
-    /* Action pour fleche de gauche et de droite */
+    const targetPictures = logement.pictures
 
-    const switchLeft = () => {
-        setSlider(slider + 1)
+    console.log(targetPictures)
+
+    /* index et localisation */
+
+    const indexPicture = {
+
     }
 
+    /* Fleche gauche et droite */
+
+    const switchLeft = () => {
+        const isFirstSlide = sliderIndex === 0;
+        const newIndex = isFirstSlide ? targetPictures.length - 1 : sliderIndex - 1;
+        setSliderIndex(newIndex);
+    };
+
     const switchRight = () => {
-        setSlider(slider - 1 )
+        const isLastSlide = sliderIndex === targetPictures.length - 1;
+        const newIndex = isLastSlide ? 0 : sliderIndex + 1;
+        setSliderIndex(newIndex);
     }
 
     return (
         <div className="carrousel">
             <div className="sectionPicture">
-                <ul>
-                    {logements.map(() => (
-                        <li>
-                            <img key={logements.id} src={logements.pictures} alt="image du carrousel" />
-                        </li>
-                    ))}
-                </ul>
+                <img src={indexPicture} alt="image du carrousel" />
             </div>
             <div class="arrow">
                 <img src="./src/assets/arrow_left.png" alt="flèche de gauche" className="arrow_left" onClick={switchLeft}/>
                 <img src="./assets/arrow_right.png" alt="flèche de droite" className="arrow_right" onClick={switchRight}/>
 		    </div>
             <div className="count">
-                <p>{""}/{count}</p>
+                <p>{""}/{""}</p>
             </div>
         </div>
     )
