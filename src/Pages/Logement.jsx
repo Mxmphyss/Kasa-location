@@ -26,7 +26,7 @@ function Logement(){
 
     return(
         <main className="logement">
-            <Carousel />
+            <Carousel slides={logement}/>
             <section className="mainContainer">
                 <div className="drawer-1">
                     <div className="box-1">
