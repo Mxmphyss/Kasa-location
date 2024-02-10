@@ -92,3 +92,25 @@
 .buttonSpin {
     background-color: transparent;
 }
+
+
+/* Media queries */
+
+@media screen and (min-width: 275px) and (max-width: 768px) {
+    
+
+    /* Collapse */
+    
+    
+
+
+}
+
+/* desktop ++ */
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+
+    /* Collapse */
+    
+
+}

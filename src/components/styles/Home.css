@@ -1,14 +1,15 @@
 /* section Logement */
 
 .sectionLogement {
+    min-width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    padding: 30px;
     background-color:#F6F6F6;
     border-radius: 9px;
-    gap: 10px;
+    padding: 3% 10px;
+    gap: 30px;
 }
 
 /* Media queries */
@@ -17,8 +18,11 @@
     
 
     /* Fonctionnement */
-    
 
+    .sectionLogement {
+        padding: 20px;
+        flex-direction: column;
+    }
 
     /* Restaurants */
     
@@ -30,9 +34,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1025px) {
 
-    /* Fonctionnement */
-    
-
+    /* section Logement */
 
     /* Restaurants */
     

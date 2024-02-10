@@ -30,7 +30,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: aquamarine;
 }
 
 .arrow_left {
@@ -65,29 +64,25 @@
 
 /* Media queries */
 
-@media screen and (min-width: 200px) and (max-width: 768px) {
+@media screen and (min-width: 275px) and (max-width: 768px) {
     
 
-    /* Fonctionnement */
+    /* Carrousel */
     
-
-
-    /* Restaurants */
+    .carrousel {
+        height: 350px;
+    }
     
-
-
 }
 
 /* desktop ++ */
 
 @media screen and (min-width: 769px) and (max-width: 1025px) {
 
-    /* Fonctionnement */
+    /* Carrousel */
     
-
-
-    /* Restaurants */
-    
-    
+    .carrousel {
+        height: 350px;
+    }
 
 }

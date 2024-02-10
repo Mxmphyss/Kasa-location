@@ -30,12 +30,15 @@
 
 /* Media queries */
 
-@media screen and (min-width: 200px) and (max-width: 768px) {
+@media screen and (min-width: 275px) and (max-width: 768px) {
     
 
-    /* Fonctionnement */
+    /* banner */
     
-
+    .bannerBase h1 {
+        font-size: 27px;
+        margin: 0 30px;
+    }
 
     /* Restaurants */
     
