@@ -10,7 +10,6 @@
     border-radius: 9px;
     height: 300px;
     box-shadow: 0px 4px 4px 0px #00000040;
-
 }
 
 .bannerBase img {
@@ -25,4 +24,35 @@
     position: absolute;
     font-size: 48px;
     color: #FFF;
+    margin: 0 80px;
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+
+
+}
+
+/* desktop ++ */
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+    
+
 }

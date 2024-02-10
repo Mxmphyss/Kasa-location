@@ -61,3 +61,33 @@
     bottom: 20px;
     color: #F0F0F0;
 }
+
+
+/* Media queries */
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+
+
+}
+
+/* desktop ++ */
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+    
+
+}

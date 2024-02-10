@@ -2,6 +2,8 @@ import "./styles/Carousel.css";
 import logements from '../Data/Data.json';
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import arrowLeft from "./../../src/assets/arrow_left.png";
+import arrowRight from "./../../src/assets/arrow_right.png"
 
 function Carrousel (){
 
@@ -20,7 +22,6 @@ function Carrousel (){
     const targetLength = logement.pictures.length
 
     const newTargetLength = targetLength - 1;
-    console.log(newTargetLength)
 
     const add1 = () => {
 
@@ -70,38 +71,14 @@ function Carrousel (){
                 <img src={targetIndex} alt="image du carrousel" />
             </div>
             <div class="arrow">
-                <img src="./src/assets/arrow_left.png" alt="flèche de gauche" className={ sliderIndex === 0 ? "arrow_left disabled" : "arrow_left" } onClick={severalFun1}/>
-                <img src="./assets/arrow_right.png" alt="flèche de droite" className={ sliderIndex >= newTargetLength ? "arrow_right disabled" : "arrow_right" } onClick={severalFun2}/>
+                <img src={arrowLeft} alt="flèche de gauche" className={ sliderIndex === 0 ? "arrow_left disabled" : "arrow_left" } onClick={severalFun1}/>
+                <img src={arrowRight} alt="flèche de droite" className={ sliderIndex >= newTargetLength ? "arrow_right disabled" : "arrow_right" } onClick={severalFun2}/>
 		    </div>
             <div className="count">
-                <p>{sliderIndex}/{targetLength - 1}</p>
+                <p>{sliderIndex +1}/{targetLength}</p>
             </div>
         </div>
     )
 }
 
 export default Carrousel
-
-/* 
-
-    const [sliderIndex, setSliderIndex] = useState(0);
-
-    const switchLeft = () => {
-        const isFirstSlide = sliderIndex === 0;
-        const newIndex = isFirstSlide ? targetPictures.length - 1 : sliderIndex - 1;
-        setSliderIndex(newIndex);
-    };
-
-    const switchRight = () => {
-        const isLastSlide = sliderIndex === targetPictures.length - 1;
-        const newIndex = isLastSlide ? 0 : sliderIndex + 1;
-        setSliderIndex(newIndex);
-    }
-
-    const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex);
-    };
-
-    const targetIndex = slides[slidesIndex]
-
-*/

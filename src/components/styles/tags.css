@@ -1,9 +1,9 @@
 /* Les filtres */
 
 .tags {
-    width: 100px;
-    padding: 5px;
-    border-radius: 10px;
+    width: auto;
+    padding: 7px;
+    border-radius: 20px;
     margin: 5px;
     display: flex;
     align-items: center;

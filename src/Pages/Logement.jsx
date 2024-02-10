@@ -20,10 +20,6 @@ function Logement(){
         flexDirection: "column",
     }
 
-    const styleFontSize = {
-        fontSize: "18px",
-    }
-
     return(
         <main className="logement">
             <Carousel slides={logement}/>
@@ -36,23 +32,29 @@ function Logement(){
                     <div className="box-2">
                         <p>{logement.host.name}</p>
                         <div className="imgPP">
-                           
+                            <img src={logement.host.picture} alt=""/>
                         </div>
                     </div>
                 </div>
                 <div className="drawer-2">
                     <div className="box-3">
-                        <Tags tags={"Cozy"}/>
-                        <Tags tags={"Canal"}/>
-                        <Tags tags={"Paris 10"}/>
+                        <Tags />
                     </div>
                     <div className="box-4">
                         <Rating />
                     </div>
                 </div>
                 <div className="collapse">
-                    <Collapse title="Description" container={logement.description} style={styleFontSize}/>
-                    <Collapse style={styleEquipement} title="Equipements" container={logement.equipments}/>
+                    <Collapse title="Description" container={logement.description}/>
+                    <Collapse style={styleEquipement} title="Equipements" 
+                        container={
+                            <ul>
+                                {logement.equipments.map((feature, index) => 
+                                    <li key={index}>{feature}</li>
+                                )}
+                            </ul>
+                        }
+                    />
                 </div>
             </section>
         </main>    

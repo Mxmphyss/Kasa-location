@@ -10,12 +10,10 @@
     font-size: 19px;
     font-weight: 400;
     color: #FFFF;
-}
-
-.mainCollapse button {
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .container-1{
@@ -23,8 +21,25 @@
     align-items: center;
     border-radius: 10px;
     position: relative;
-    padding: 10px;
     background-color: #FF6060;
+}
+
+.container-1 button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container-1 button i{
+    font-size: 20px;
+    color: #F0F0F0;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .container-1.onWork-1 {
@@ -34,8 +49,14 @@
 .container-2{
     display: none;
     background-color: #F6F6F6;
-    padding: 5px 15px;
+    padding: 15px 15px;
     border-radius: 0 0 10px 10px;
+    font-size: 18px;
+}
+
+.container-2 ul li{
+    list-style-type: none;
+    margin: 5px;
 }
 
 .container-2.onWork-2 {
@@ -60,11 +81,14 @@
     animation: down-to-up forwards;
 }
 
-.buttonSpin {
-    background-color: transparent;
+.buttonSpin.spin i {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.buttonSpin i{
-    font-size: 20px;
-    color: #F0F0F0;
+.buttonSpin {
+    background-color: transparent;
 }

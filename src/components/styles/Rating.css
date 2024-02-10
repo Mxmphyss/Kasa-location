@@ -1,8 +1,18 @@
 /* Rating */
 
 .stars i {
-    color: grey;
     font-size: 24px;
     margin-left: 10px;
 }
 
+.stars i {
+    color: #FF6060;
+}
+
+.styleRed {
+    color: #FF6060;
+}
+
+.styleGrey {
+    color: #E3E3E3;
+}

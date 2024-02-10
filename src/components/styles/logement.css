@@ -53,13 +53,20 @@
     padding: 10px;
     font-size: 24px;
     color: #FF6060;
+    direction: rtl;
 }
 
 .imgPP {
     width: 60px;
     height: 60px;
-    background-color: grey;
     border-radius: 50%;
+}
+
+.imgPP img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .box-3{
@@ -73,4 +80,43 @@
     display: flex;
     flex-direction: row;
     gap: 150px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+
+    /* Header */
+    
+    .nav1 img {
+        width: 10px;
+    }
+    
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+
+
+    /* footer */
+
+}
+
+/* desktop ++ */
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+
+
+    /* footer */
+
 }

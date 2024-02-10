@@ -8,6 +8,11 @@
     padding: 10px 50px;
 }
 
+.nav1 img {
+    width: auto;
+    height: auto;
+}
+
 .nav2 {
     display: flex;
     justify-content: space-between;
@@ -23,3 +28,43 @@
 .nav2 {
     margin-right: 0;
 }
+
+/* Media queries */
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+
+    /* Header */
+    
+    .nav1 img {
+        width: 10px;
+    }
+    
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+
+
+    /* footer */
+
+}
+
+/* desktop ++ */
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+
+    /* Fonctionnement */
+    
+
+
+    /* Restaurants */
+    
+
+
+    /* footer */
+
+}
+

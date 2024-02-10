@@ -25,28 +25,16 @@ function Collapse ({ title, style, container }){
         }
     };
 
-    /* 
-
-    Ce code ne fonctionne pas. Il m'affiche "Logement.map is not a function". Je ne peux pas viser directement les tags de l'id
-    de la page en question
-    
-    {logement.forEach(function () {
-            <p>{ container }</p>
-        })
-    };
-    
-    */
-
     return (
         <div className="mainCollapse">
             <div className={ click == 0 ? "container-1" : "container-1 onWork-1" }>
                 <h2>{ title }</h2>
-                <button onClick={add} className={ click == 0 ? "buttonSpin" : "buttonSpin spin" }>
-                    <i class="fa-solid fa-chevron-up"></i>
+                <button onClick={add} className={"buttonSpin"}>
+                    <i className={ click == 0 ? "buttonSpin" : "buttonSpin spin" } class="fa-solid fa-chevron-up"></i>
                 </button>
             </div>
             <div style={style} className={ click == 0 ? "container-2" : "container-2 onWork-2" }>
-
+                <p>{container}</p>
             </div>
         </div>
     )
