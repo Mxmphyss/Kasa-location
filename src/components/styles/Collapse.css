@@ -68,27 +68,6 @@
     transform: rotate(180deg);
 }
 
-@keyframes down-to-up {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(180deg);
-    }
-}
-
-.buttonSpin.spin {
-    animation: down-to-up forwards;
-}
-
-.buttonSpin.spin i {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    font-size: 24px;
-    cursor: pointer;
-}
-
 .buttonSpin {
     background-color: transparent;
 }

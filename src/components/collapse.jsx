@@ -30,11 +30,11 @@ function Collapse ({ title, style, container }){
             <div className={ click == 0 ? "container-1" : "container-1 onWork-1" }>
                 <h2>{ title }</h2>
                 <button onClick={add} className={"buttonSpin"}>
-                    <i className={ click == 0 ? "buttonSpin" : "buttonSpin spin" } class="fa-solid fa-chevron-up"></i>
+                    <i className={ click == 0 ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down" }></i>
                 </button>
             </div>
             <div style={style} className={ click == 0 ? "container-2" : "container-2 onWork-2" }>
-                <p>{container}</p>
+                {container}
             </div>
         </div>
     )

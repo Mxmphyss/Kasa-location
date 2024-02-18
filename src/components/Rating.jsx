@@ -1,50 +1,20 @@
 import "./styles/Rating.css";
-import logements from '../Data/Data.json';
-import { useParams } from "react-router-dom";
-import Error from "../Pages/Error";
-import { useState } from "react";
 
-function Rating (){
+function Rating( {note} ){
 
-    const [ define, setDefine ] = useState(0)
-
-    const { id } = useParams();
-    const logement = logements.find(logement => logement.id === id);
-
-    if(!logement){
-        <Error />
-    }
-
-    const ratingValue = logement.rating
-    const valueInt = parseInt(ratingValue)
-    let count = 0;
-
-    function countUp (){
-        if (count <= valueInt){
-            count++;
-        }
-    }
-    console.log(valueInt)
-
-    function changeColor (){
-        do{
-            if(define === 0){
-                setDefine(define - 1)
-                setDefine(define + 1)
-            } 
-        } while (count === valueInt)
-    }
-
+    const stars = [1, 2, 3, 4, 5];
 
     return (
         <div className="stars">
-            <i className={ define == 1 ? "styleRed" : "styleGrey" } class="fa-solid fa-star"></i>
-            <i className={ define == 1 ? "styleRed" : "styleGrey" } class="fa-solid fa-star"></i>
-            <i className={ define == 1 ? "styleRed" : "styleGrey" } class="fa-solid fa-star"></i>
-            <i className={ define == 1 ? "styleRed" : "styleGrey" } class="fa-solid fa-star"></i>
-            <i className={ define == 1 ? "styleRed" : "styleGrey" } class="fa-solid fa-star"></i>
+            {stars.map((level) => 
+                note >= level ? (
+                    <i key={level.toString()} className="fa-solid fa-star styleRed"></i>
+                ) : (
+                    <i key={level.toString()} className="fa-solid fa-star styleGrey"></i>
+                )
+            )}
         </div>
     )
 }
 
-export default Rating
+export default Rating;

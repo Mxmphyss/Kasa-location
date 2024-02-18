@@ -16,8 +16,8 @@ function Tags (){
     return (
             <Fragment>
                 {logement.tags.map((feature, index) =>
-                    <div className="tags">
-                        <p key={index}>{feature}</p>
+                    <div className="tags" key={index}>
+                        <p>{feature}</p>
                     </div>
                 )}
             </Fragment>

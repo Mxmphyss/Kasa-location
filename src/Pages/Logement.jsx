@@ -13,7 +13,7 @@ function Logement(){
     const logement = logements.find(logement => logement.id === id);
 
     if(!logement){
-        <Error />
+        return <Error />;
     }
 
     const styleEquipement = {
@@ -41,7 +41,7 @@ function Logement(){
                         <Tags />
                     </div>
                     <div className="box-4">
-                        <Rating />
+                        <Rating note={logement.rating}/>
                     </div>
                 </div>
                 <div className="collapse">

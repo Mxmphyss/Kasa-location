@@ -70,7 +70,7 @@ function Carrousel (){
             <div className="sectionPicture">
                 <img src={targetIndex} alt="image du carrousel" />
             </div>
-            <div class="arrow">
+            <div className="arrow">
                 <img src={arrowLeft} alt="flèche de gauche" className={ sliderIndex === 0 ? "arrow_left disabled" : "arrow_left" } onClick={severalFun1}/>
                 <img src={arrowRight} alt="flèche de droite" className={ sliderIndex >= newTargetLength ? "arrow_right disabled" : "arrow_right" } onClick={severalFun2}/>
 		    </div>
